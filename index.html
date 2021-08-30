@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <style>
+        *{text-align:center;}
+        .header-text{
+            color:green; 
+            font-family: monospace;
+        }
+        h1{
+            font-style: italic;
+            text-decoration: underline;
+        }
+        body{
+            font-family: monospace;
+            background-color:aqua;
+        }
+        div{
+            margin:10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <h1 class="header-text">Employee Interests Survey Form</h1>
+            Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            <br><br>
+            <img src="https://api.time.com/wp-content/uploads/2015/02/cats.jpg?quality=85&w=1024&h=512&crop=1" alt=""> <br><br>
+            <div><label for="Username" class="font-style">Enter your name:</label>
+            <input type="text" name="Username" id="" placeholder="Username">
+            </div> 
+            <div><label for="Department" class="font-style">Enter your department:</label>
+            <input type="text" name="Department" id="" placeholder="Input Your Department">
+            </div>
+            <div class="font-style">
+            <label for="Description"> Tell us about yourself:</label>
+            <textarea name="Description" id="" cols="30" rows="10" placeholder="Description"></textarea>
+            </div>
+            <div class="font-style">
+            <label for="exe">Do you exercise at home? </label>
+            <input type="radio" name="exe" id="" value="1">Yes
+            <input type="radio" name="exe" id="" value="0">No
+            </div>
+            <div class="font-style">
+            <label for="Topics">How do you like to read about your favorite topic?</label>    
+            <input type="checkbox" name="Topics" id="" value="books">Books
+            <input type="checkbox" name="Topics" id="" value="web">Web
+            <input type="checkbox" name="Topics" id="" value="phone">Phone Apps
+            <input type="checkbox" name="Topics" id="" value="magazines">Magazines
+            </div>
+            <div class="font-style">
+            <label for="">
+            What genres of movies do you like?</label>
+            <select name="" id="">
+                <option value="0" selected="true"></option>
+                <option value="comedy">Comedy</option>
+                <option value="horor">Horor</option>
+                <option value="action">Action</option>
+                <option value="thriller">Thriller</option>
+                <option value="biotic">Biotic</option>
+            </select>
+            </div>
+            <div class="font-style">
+            <input type="submit" value="Submit" name="submit">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
