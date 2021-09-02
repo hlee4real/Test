@@ -1,0 +1,22 @@
+.parent{
+    border: 1px solid red;
+    background-color:gray;
+    padding: 20px;
+}
+.element{
+    border: 1px dotted blue;
+    background-color: yellow;
+    position: absolute; /* tuyệt đối, sử dụng với x và y trong 2D */
+    padding: 20px;
+}
+/* tác dụng của các thẻ tự search.
+
+*/
+body,html{
+    height:100%;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}

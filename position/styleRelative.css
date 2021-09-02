@@ -1,0 +1,22 @@
+.parent{
+    background-color:gray;
+    padding: 70px;
+    position: relative;
+}
+.element{
+    border: 1px dotted blue;
+    background-color: yellow;
+    padding: 20px;
+    position: absolute; /*cái này sẽ nhận mối quan hệ relative ở trên để styling */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+body,html{
+    height:100%;
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
