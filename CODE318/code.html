@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Layout</title>
+</head>
+<body>
+    <div class="wrap"> <!--đây là thẻ div cha, sẽ có 4 thẻ div con đấy là header, content, sidebar và footer -->
+        <div class="header">
+            <div class="logo">
+                Logo
+            </div>
+            <div class="nav">
+                <ul>
+                    <a href=""><li>ABC</li></a>
+                    <a href=""><li>XYZ</li></a>
+                    <a href=""><li>123</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="content">content</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="clear"></div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+
+
+<style>
+    .logo{
+        font-size:25px;
+        float:left;
+    }
+    .nav{
+        float:right;
+    }
+    ul{
+        text-align: center;
+        padding: 0px;
+        margin:0px;
+        list-style-type: none;
+    }
+    li{
+        font-size: 18px;
+        line-height: none;
+        display:inline-block;
+        height:50px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    .wrap{
+        width:980px;
+        margin: 0 auto;
+    }
+    a:hover{
+        background-color:grey;
+    }
+    .header{
+        padding-top:25px;
+        padding:20px;
+        height:30px;
+        background-color: aqua;
+        margin-bottom: 15px;
+    }
+    .content{
+        background-color:yellow;
+        height:980px;
+        width: 70%; /* cái này là để cho nó fit với mọi trường hợp */
+        float: right;
+    }
+    .sidebar{
+        background-color: green;
+        height:980px;
+        width: 29%; /* cái này là để cho nó fit với mọi trường hợp */
+        float:left;
+        padding:0;
+    }
+    .clear{
+        clear:both;
+    }
+    .footer{
+        height: 70px;
+        margin-top:15px;
+        background-color: red;
+    }
+</style>
